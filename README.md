@@ -2,7 +2,7 @@
 The course project works with the "Human Activity Recognition Using Smartphones Dataset" from the UCI Machine Learning Repository. A description of the dataset can be found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. 
 The dataset can be downloaded at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
-**The Transformation Script **
+**The Transformation Script**  
 The file run_analysis.R contains an R script for transforming the original dataset into a second dataset according to the following rules:
 
 * Merges the training and the test sets to create one data set.
@@ -24,8 +24,7 @@ To run the script run_analysis.R:
 * type source("run_analysis.R") to execute the script
 * The script will read the test and training data from the folder UCI HAR Dataset, apply the transformations listed -above and write the result to the file "tidy_data.txt" in the current working directory.
 
-The file "tidy_data.txt" can be read into a data.frame using
-
+The file "tidy_data.txt" can be read into a data.frame using 
 read.table("tidy_data.txt", header = T)
 
 #Explanation Of The Script
