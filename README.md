@@ -24,11 +24,12 @@ To run the script run_analysis.R:
 * type source("run_analysis.R") to execute the script
 * The script will read the test and training data from the folder UCI HAR Dataset, apply the transformations listed -above and write the result to the file "tidy_data.txt" in the current working directory.
 
-The file "tidy_data.txt" can be read into a data.frame using 
+The file "tidy_data.txt" can be read into a data.frame using
+
 read.table("tidy_data.txt", header = T)
 
 #Explanation Of The Script
-**Merging Of Test And Training Set**
+**Merging Of Test And Training Set**  
 Requirement 1 states: "Merges the training and the test sets to create one data set." 
 * To achive this, the run_analysis.R script first loads the three input files (subject data, label data and feature data) for each of the two datasets and merges them into one data.frame. 
 * Finally the two resulting data.frames are concatenated to one big data.frame. 
@@ -59,6 +60,9 @@ Requirement 4 states: "Appropriately labels the data set with descriptive variab
 * Remove hyphens
 
 Requirement 5 states: "From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject."
+* Each variable forms a column.
+* Each observation forms a row.
+* Each type of observational unit forms a table
 
 #The codebook.
 
